@@ -1,0 +1,103 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#postArticleModal,
+#articleDetailModal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal,
+#detailModal {
+    border: 1px solid black;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#editForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#detailModal {
+    height: 400px;
+}
+
+li {
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+#modal > form > input,
+textarea {
+    width: 100%;
+}
+
+#modal > button {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid black;
+}
+
+#postBtn {
+    width: 70%;
+    height: 40px;
+}
+
+#category-div {
+    display: flex;
+}
+
+#category-div > input {
+    height: 40px;
+}
+
+#category-div > button {
+    height: 45px;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
